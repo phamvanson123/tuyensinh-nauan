@@ -1,128 +1,116 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Trung Tâm Đào Tạo Nghề Nấu Ăn</title>
+  <meta charset="UTF-8">
+  <title>Trang Tuyển Sinh Trung Cấp Nấu Ăn</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
+      margin: 0;
       font-family: Arial, sans-serif;
-      margin: 0; padding: 0;
-      line-height: 1.6;
     }
+
     header {
-      background: #cc0000;
+      background-color: #f00;
       color: white;
-      padding: 20px;
+      padding: 10px 0;
       text-align: center;
     }
+
     nav {
-      background: #333;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
+      background-color: #0066ff;
+      text-align: center;
       padding: 10px 0;
     }
+
     nav a {
       color: white;
       text-decoration: none;
+      margin: 0 15px;
       font-weight: bold;
     }
-    section {
-      padding: 30px;
+
+    .banner {
+      background: url('https://hoctrungcapnauan.com/wp-content/uploads/2022/12/hoc-nau-an.jpg') no-repeat center;
+      background-size: cover;
+      height: 400px;
+      position: relative;
     }
-    .banner img {
-      width: 100%;
-      height: auto;
-    }
-    form input, form select, form textarea {
-      display: block;
-      margin: 10px 0;
-      width: 100%;
-      padding: 10px;
-    }
-    footer {
-      background: #eee;
+
+    .overlay-text {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255, 0, 0, 0.8);
+      color: white;
       padding: 20px;
+      font-size: 24px;
+      max-width: 400px;
+    }
+
+    .section {
+      padding: 30px;
       text-align: center;
     }
-    .image-gallery img {
-      width: 30%;
+
+    .images img {
+      width: 200px;
+      height: auto;
       margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px gray;
+    }
+
+    .hotline {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      background-color: red;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 30px;
+      font-weight: bold;
+      font-size: 16px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>TRUNG TÂM ĐÀO TẠO NGHỀ NẤU ĂN</h1>
-    <p>Đào tạo Sơ cấp – Trung cấp – Cao đẳng ngành Bếp chuyên nghiệp</p>
+    <h1>TRANG TUYỂN SINH TRUNG CẤP NẤU ĂN</h1>
   </header>
 
   <nav>
-    <a href="#gioithieu">Giới thiệu</a>
-    <a href="#chuongtrinh">Chương trình</a>
-    <a href="#dangky">Đăng ký</a>
-    <a href="#hinhanh">Hình ảnh</a>
-    <a href="#lienhe">Liên hệ</a>
+    <a href="#">Trang chủ</a>
+    <a href="#">Thông báo tuyển sinh</a>
+    <a href="#">Hồ sơ đăng ký</a>
+    <a href="#">Địa điểm</a>
+    <a href="#">Đăng ký online</a>
+    <a href="#">Liên hệ – 0978 763 828</a>
   </nav>
 
   <div class="banner">
-    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/appetite-1238259_960_720.jpg" alt="Banner bếp ăn">
+    <div class="overlay-text">
+      HỌC TRUNG CẤP NẤU ĂN<br>
+      TỰ CHỌN THỜI GIAN HỌC<br>
+      ĐỊA ĐIỂM HỌC TOÀN QUỐC<br>
+      <strong>Gọi ngay: 0978 763 828</strong>
+    </div>
   </div>
 
-  <section id="gioithieu">
-    <h2>Giới thiệu</h2>
-    <p>Trung tâm chuyên đào tạo nghề nấu ăn chuyên nghiệp cho mọi đối tượng. Cấp chứng chỉ Sơ cấp, Trung cấp và Cao đẳng nghề được công nhận toàn quốc.</p>
-  </section>
-
-  <section id="chuongtrinh">
-    <h2>Chương trình đào tạo</h2>
-    <ul>
-      <li>Sơ cấp nghề nấu ăn (3 tháng)</li>
-      <li>Trung cấp nghề (1–2 năm)</li>
-      <li>Cao đẳng nghề (2–3 năm)</li>
-    </ul>
-  </section>
-
-  <section id="dangky">
-    <h2>Đăng ký học</h2>
-    <form>
-      <input type="text" placeholder="Họ và tên" required />
-      <input type="tel" placeholder="Số điện thoại" required />
-      <input type="email" placeholder="Email (nếu có)" />
-      <select required>
-        <option value="">Chọn chương trình</option>
-        <option value="so-cap">Sơ cấp</option>
-        <option value="trung-cap">Trung cấp</option>
-        <option value="cao-dang">Cao đẳng</option>
-      </select>
-      <textarea placeholder="Ghi chú thêm..."></textarea>
-      <input type="submit" value="Gửi đăng ký" />
-    </form>
-  </section>
-
-  <section id="hinhanh">
-    <h2>Hình ảnh lớp học</h2>
-    <div class="image-gallery">
-      <img src="https://cdn.pixabay.com/photo/2020/02/13/12/09/cooking-4842133_960_720.jpg" alt="Lớp học 1" />
-      <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/kitchen-336141_960_720.jpg" alt="Lớp học 2" />
-      <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/chef-1284816_960_720.jpg" alt="Lớp học 3" />
+  <div class="section">
+    <h2>Hình ảnh lớp học – Món ăn</h2>
+    <div class="images">
+      <img src="https://hoctrungcapnauan.com/wp-content/uploads/2022/12/tac-pham-cu-qua.jpg" alt="Điêu khắc củ quả">
+      <img src="https://hoctrungcapnauan.com/wp-content/uploads/2022/12/mon-an-1.jpg" alt="Món ăn 1">
+      <img src="https://hoctrungcapnauan.com/wp-content/uploads/2022/12/mon-an-2.jpg" alt="Món ăn 2">
+      <img src="https://hoctrungcapnauan.com/wp-content/uploads/2022/12/mon-an-3.jpg" alt="Món ăn 3">
     </div>
-  </section>
+  </div>
 
-  <section id="lienhe">
-    <h2>Liên hệ</h2>
-    <p>🏠 Địa chỉ: 123 Đường Bếp Trưởng, Hà Nội</p>
-    <p>📞 Hotline: 0901 234 567</p>
-    <p>📧 Email: tuyensinh@daotaonauan.vn</p>
-  </section>
-
-  <footer>
-    © 2025 Trung Tâm Đào Tạo Nghề Nấu Ăn. All rights reserved.
-  </footer>
+  <div class="hotline">
+    📞 0969 921 828
+  </div>
 
 </body>
 </html>
-
