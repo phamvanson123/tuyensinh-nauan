@@ -1,10 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <title>Tuyển sinh nghề nấu ăn</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trung Tâm Đào Tạo Nghề Nấu Ăn</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #cc0000;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 30px;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+    form input, form select, form textarea {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+      padding: 10px;
+    }
+    footer {
+      background: #eee;
+      padding: 20px;
+      text-align: center;
+    }
+    .image-gallery img {
+      width: 30%;
+      margin: 10px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Chào mừng đến với trung tâm đào tạo nấu ăn!</h1>
-  <p>Đăng ký học nghề nấu ăn từ sơ cấp đến cao đẳng.</p>
+
+  <header>
+    <h1>TRUNG TÂM ĐÀO TẠO NGHỀ NẤU ĂN</h1>
+    <p>Đào tạo Sơ cấp – Trung cấp – Cao đẳng ngành Bếp chuyên nghiệp</p>
+  </header>
+
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#chuongtrinh">Chương trình</a>
+    <a href="#dangky">Đăng ký</a>
+    <a href="#hinhanh">Hình ảnh</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+
+  <div class="banner">
+    <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/appetite-1238259_960_720.jpg" alt="Banner bếp ăn">
+  </div>
+
+  <section id="gioithieu">
+    <h2>Giới thiệu</h2>
+    <p>Trung tâm chuyên đào tạo nghề nấu ăn chuyên nghiệp cho mọi đối tượng. Cấp chứng chỉ Sơ cấp, Trung cấp và Cao đẳng nghề được công nhận toàn quốc.</p>
+  </section>
+
+  <section id="chuongtrinh">
+    <h2>Chương trình đào tạo</h2>
+    <ul>
+      <li>Sơ cấp nghề nấu ăn (3 tháng)</li>
+      <li>Trung cấp nghề (1–2 năm)</li>
+      <li>Cao đẳng nghề (2–3 năm)</li>
+    </ul>
+  </section>
+
+  <section id="dangky">
+    <h2>Đăng ký học</h2>
+    <form>
+      <input type="text" placeholder="Họ và tên" required />
+      <input type="tel" placeholder="Số điện thoại" required />
+      <input type="email" placeholder="Email (nếu có)" />
+      <select required>
+        <option value="">Chọn chương trình</option>
+        <option value="so-cap">Sơ cấp</option>
+        <option value="trung-cap">Trung cấp</option>
+        <option value="cao-dang">Cao đẳng</option>
+      </select>
+      <textarea placeholder="Ghi chú thêm..."></textarea>
+      <input type="submit" value="Gửi đăng ký" />
+    </form>
+  </section>
+
+  <section id="hinhanh">
+    <h2>Hình ảnh lớp học</h2>
+    <div class="image-gallery">
+      <img src="https://cdn.pixabay.com/photo/2020/02/13/12/09/cooking-4842133_960_720.jpg" alt="Lớp học 1" />
+      <img src="https://cdn.pixabay.com/photo/2014/05/03/00/42/kitchen-336141_960_720.jpg" alt="Lớp học 2" />
+      <img src="https://cdn.pixabay.com/photo/2016/03/27/19/40/chef-1284816_960_720.jpg" alt="Lớp học 3" />
+    </div>
+  </section>
+
+  <section id="lienhe">
+    <h2>Liên hệ</h2>
+    <p>🏠 Địa chỉ: 123 Đường Bếp Trưởng, Hà Nội</p>
+    <p>📞 Hotline: 0901 234 567</p>
+    <p>📧 Email: tuyensinh@daotaonauan.vn</p>
+  </section>
+
+  <footer>
+    © 2025 Trung Tâm Đào Tạo Nghề Nấu Ăn. All rights reserved.
+  </footer>
+
 </body>
 </html>
+
